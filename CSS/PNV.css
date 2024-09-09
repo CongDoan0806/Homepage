@@ -1,0 +1,37 @@
+.container {
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+img{
+    width: 100%;
+    max-height: 250px;
+    
+}
+/* phần header */
+.header{
+    background-color: rgb(5, 114, 51);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header h1, .header p{
+    color: white;
+    padding-left: 30px;
+    
+}
+/* Phấn container */
+.content{
+    margin-top: 130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+.london, .paris, .tokyo{
+    width: 100%;
+}
+@media screen and (max-width:767px) {
+    .content{
+        grid-template-columns: 1fr;
+    }
+}
